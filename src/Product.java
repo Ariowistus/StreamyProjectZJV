@@ -1,3 +1,5 @@
+import java.text.DecimalFormatSymbols;
+
 public class Product implements Comparable<Product> {
     private final String id;
     private final String name;
@@ -18,6 +20,11 @@ public class Product implements Comparable<Product> {
         int otherNumber = Integer.parseInt(o.id.substring(7));
         return thisNumber - otherNumber;
     }
+
+    public Money getPrice() {
+        return price;
+    }
+
     public enum Category {
         HOBBY,
         CLOTHES,

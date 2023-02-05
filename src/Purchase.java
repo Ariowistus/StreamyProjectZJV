@@ -18,6 +18,19 @@ public class Purchase {
         this.when = when;
     }
 
+    public <R> R getBuyer() {
+        return (R) buyer;
+    }
+
+    public Payment getPayment() {
+        return payment;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+
+
     // konstruktory, gettery itp
     public enum Delivery {
         IN_POST,

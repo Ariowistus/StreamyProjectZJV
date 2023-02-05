@@ -9,6 +9,10 @@ public class Money {
         this.currency = currency;
     }
 
+    public Currency getCurrency() {
+        return currency;
+    }
+
     // konstruktory, gettery itp
     public enum Currency {
         PLN,
