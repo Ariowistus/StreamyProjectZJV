@@ -32,4 +32,15 @@ public class Client implements Comparable<Client> {
     public int hashCode() {
         return Objects.hash(pesel);
     }
+
+    @Override
+    public String toString() {
+        return "Client{" +
+                "id='" + id + '\'' +
+                '}';
+    }
+
+    public String getId() {
+        return id;
+    }
 }

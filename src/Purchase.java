@@ -1,9 +1,10 @@
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 public class Purchase {
     private final Client buyer;
     private final Product product;
-    private final long quantity;
+    private long quantity;
     private final Delivery delivery;
     private final Payment payment;
     private final LocalDate when;
@@ -18,9 +19,7 @@ public class Purchase {
         this.when = when;
     }
 
-    public <R> R getBuyer() {
-        return (R) buyer;
-    }
+
 
     public Payment getPayment() {
         return payment;
@@ -30,6 +29,13 @@ public class Purchase {
         return product;
     }
 
+    public long getQuantity() {
+        return quantity;
+    }
+
+    public Client getBuyer() {
+        return buyer;
+    }
 
     // konstruktory, gettery itp
     public enum Delivery {
